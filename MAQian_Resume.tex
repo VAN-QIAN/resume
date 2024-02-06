@@ -1,0 +1,107 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Qian Ma}
+
+\basicInfo{
+  \email{maq5@rpi.edu} \textperiodcentered\ 
+  \phone{(+86) 18081180675} \textperiodcentered\ }
+
+\section{\faGraduationCap\ {Education}}
+\datedsubsection{{\textbf{Rensselaer Polytechnic Institute}}}{Current}
+\textit{Ph.D. Student} in Computer Science
+\datedsubsection{{\href{https://portland-my.sharepoint.com/:b:/g/personal/qma233-c_my_cityu_edu_hk/EaddzNGLGsRMoknymTwm_a8BE8Hy64B1wz7O_CJD4iYaKQ?e=XzIWeg}{\color{blue}{\textbf{City University of Hong Kong}}}}}{2022 -- 2023} %
+\textit{Master's Degree} in MscMIT with Distinction
+\datedsubsection{\href{https://portland-my.sharepoint.com/:f:/g/personal/qma233-c_my_cityu_edu_hk/EvgUYxJ87_hImoWnjgUrumMBBdONb_MJCfrogSKQKWOjBQ?e=ISmUIC}{\color{blue}{\textbf{University of Electronic Science and Technology of China}}}}{2018 -- 2022}
+\textit{Bachelor's Degree} in Software Engineering - Systems and Technology
+
+
+\section{\faUsers\ Research Experience}
+
+\datedsubsection{\textbf{\href{(https://aml-cityu.github.io/team/)}{\color{blue}{AML Cityu}}}}{October 2022 - June 2023}
+My previous internship experiences have sparked my interest in the theoretical foundations and related research behind Data Intelligence software development. This is one of the reasons why I am eager to continue my academic pursuits. Currently, I am working in the \href{[https://aml-cityu.github.io/team/ ↗](https://aml-cityu.github.io/team/)}{AML} laboratory at City University of Hong Kong (CityU SDSC), under the guidance of Professor \href{[https://www.cityu.edu.hk/stfprofile/xyzhao.htm ↗](https://www.cityu.edu.hk/stfprofile/xyzhao.htm)}{\color{blue}{Xiangyu Zhao}}. I am collaborating with my Ph.D. seniors on research projects related to smart cities.
+
+\datedsubsection{\textbf{Rethinking Sensors Modeling: Hierarchical Information Enhanced Traffic Forecasting\cite{qma23}}}{August 2023}
+\href{https://github.com/VAN-QIAN/CIKM23-HIEST}{\color{blue}{Project Link}}\\
+
+I chose the EE6680D paper project, with guidance from Professor \href{(https://www.cityu.edu.hk/stfprofile/haoliali.htm)}{\color{blue}{Haoliang Li}} and Professor \href{(https://www.cityu.edu.hk/stfprofile/xyzhao.htm)}{\color{blue}{Xiangyu Zhao}}.
+
+The paper project carries the same credit as three graduate courses. I successfully had the paper accepted by CIKM23 with an A+ for the dissertation project.
+
+\begin{itemize}
+\item Motivated the rethinking of spatial dependencies in spatio-temporal forecasting
+\item Made core methodological contributions by constructing two new hierarchical perspectives and utilizing cross-level information enhancement to improve task performance at the original level
+\item Independently designed and implemented all experiments
+\item Finished the academic paper writing with the guidance from my advisors. 
+\item Received positive feedback from rigorous peer reviewers and obtained acceptance
+\end{itemize}
+
+\datedsubsection{\textbf{University of Electronic Science and Technology of China}}{December 2019 -- June 2022}
+In Professor Su Sheng's laboratory, I was involved in research projects related to Urban Computing.
+As a sophomore undergraduate student, my main responsibility was data processing, which involved pre-processing grid-based data from driving records.
+The following are some of the challenges I encountered:
+\begin{itemize}
+\item The Global Interpreter Lock (GIL) in Python resulted in lower efficiency as it only allowed single-core processing.
+\item Many operations could be parallelized, such as computing the latitude and longitude corresponding to GeoHash and the time-interval index corresponding to the start time.
+\item Therefore, I implemented a MapReduce-like solution to leverage all CPU cores for parallel processing.
+\end{itemize}
+
+\section{\faUsers\ Internship Experience}
+\datedsubsection{\href{(https://portland-my.sharepoint.com/:f:/g/personal/qma233-c_my_cityu_edu_hk/EvgUYxJ87_hImoWnjgUrumMBBdONb_MJCfrogSKQKWOjBQ?e=ISmUIC)}{\color{blue}{\textbf{SAP Labs China}}} Xi'an}{April 2021 -- May 2022}
+\role{Internship}{Manager: {Jingtao Li} {jing-tao.li@sap.com}}
+Develop Intern in the Dev-Infra Team of \href{(https://www.sap.com/products/technology-platform/data-intelligence.html)}{\color{blue}{SAP Data Intelligence}}
+\begin{itemize}
+\item Cloud infrastructure service automation platform.
+\item Continuous integration (CI) / continuous delivery (CD) automation platform.
+\item During the internship, I was responsible for two micro-services in the platform.
+\item I have presented and introduced our team's new projects or added features multiple times as the speaker at internal global sharing sessions. The audience mainly consisted of colleagues from L2-Org SAP T\&I HANA Database and Analytics, which is a global team under the second-level architecture.
+\item As the product is SaaS, our team collaborated with other teams responsible for specific development components to optimize the implementation of cloud-native architecture.
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: Python > Java == JavaScript == Golang > C
+  \item Platform: Linux
+  \item Development Tools: Git, Docker , Kubernetes , Singularity(to build customized enviornment for HPC)
+  \item CI/CD: Jenkins
+  \item DL Framework: PyTorch
+  \item Paper Writting: \LaTeX
+\end{itemize}
+
+\section{\faInfo\ English Proficiency}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item IELTS:7.0(L:7.0 R:8.5 W:6.0 S:5.5)
+  \item CET-6:551
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{Outstanding Student Scholarship}}{2018-2019 Academic Year}
+\datedline{\textit{Outstanding Student Scholarship}}{2020-2021 Academic Year}
+\datedline{\textit{Outstanding Student Scholarship}}{2021-2022 Academic Year}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item GitHub: https://github.com/VAN-QIAN
+  \item Languages: English - Fluent, Mandarin - Native speaker
+\end{itemize}
+
+\section{\faInfo\ Publications}
+\bibliographystyle{IEEEtran}
+\bibliography{mycite}
+\end{document}
