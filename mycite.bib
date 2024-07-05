@@ -17,12 +17,37 @@
 }
 
 @inproceedings{qma23,
-  title={Rethinking Sensors Modeling:Hierarchical Information Enhanced Traffic Forecasting},
-  author={Ma,Qian and Zhang,Zijian and Zhao,Xiangyu and Li,Haoliang and  Zhao,Hongwei and Wang,Yiqi and Liu,Zitao and Wang,Wanyu},
-  booktitle={Proceedings of the 32nd ACM International Conference on Information \& Knowledge Management},
-  url = {https://doi.org/10.1145/3583780.3614910},
-  doi = {10.1145/3583780.3614910},
-  publisher       = {ACM},
-  address = {Birmingham.,United Kingdom},
-  year={2023}
+author = {Ma, Qian and Zhang, Zijian and Zhao, Xiangyu and Li, Haoliang and Zhao, Hongwei and Wang, Yiqi and Liu, Zitao and Wang, Wanyu},
+title = {Rethinking Sensors Modeling: Hierarchical Information Enhanced Traffic Forecasting},
+year = {2023},
+isbn = {9798400701245},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3583780.3614910},
+doi = {10.1145/3583780.3614910},
+abstract = {With the acceleration of urbanization, traffic forecasting has become an essential role in smart city construction. In the context of spatio-temporal prediction, the key lies in how to model the dependencies of sensors. However, existing works basically only consider the micro relationships between sensors, where the sensors are treated equally, and their macroscopic dependencies are neglected. In this paper, we argue to rethink the sensor's dependency modeling from two hierarchies: regional and global perspectives. Particularly, we merge original sensors with high intra-region correlation as a region node to preserve the inter-region dependency. Then, we generate representative and common spatio-temporal patterns as global nodes to reflect a global dependency between sensors and provide auxiliary information for spatio-temporal dependency learning. In pursuit of the generality and reality of node representations, we incorporate a Meta GCN to calibrate the regional and global nodes in the physical data space. Furthermore, we devise the cross-hierarchy graph convolution to propagate information from different hierarchies. In a nutshell, we propose a Hierarchical Information Enhanced Spatio-Temporal prediction method, HIEST, to create and utilize the regional dependency and common spatio-temporal patterns. Extensive experiments have verified the leading performance of our HIEST against state-of-the-art baselines. We publicize the code to ease reproducibility1.},
+booktitle = {Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
+pages = {1756–1765},
+numpages = {10},
+keywords = {graph learning, smart city, spatio-temporal prediction},
+location = {Birmingham, United Kingdom},
+series = {CIKM '23}
+}
+
+@inproceedings{promptst,
+author = {Zhang, Zijian and Zhao, Xiangyu and Liu, Qidong and Zhang, Chunxu and Ma, Qian and Wang, Wanyu and Zhao, Hongwei and Wang, Yiqi and Liu, Zitao},
+title = {PromptST: Prompt-Enhanced Spatio-Temporal Multi-Attribute Prediction},
+year = {2023},
+isbn = {9798400701245},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3583780.3615016},
+doi = {10.1145/3583780.3615016},
+abstract = {In the era of information explosion, spatio-temporal data mining serves as a critical part of urban management. Considering the various fields demanding attention, e.g., traffic state, human activity, and social event, predicting multiple spatio-temporal attributes simultaneously can alleviate regulatory pressure and foster smart city construction. However, current research can not handle the spatio-temporal multi-attribute prediction well due to the complex relationships between diverse attributes. The key challenge lies in how to address the common spatio-temporal patterns while tackling their distinctions. In this paper, we propose an effective solution for spatio-temporal multi-attribute prediction, PromptST. We devise a spatio-temporal transformer and a parameter-sharing training scheme to address the common knowledge among different spatio-temporal attributes. Then, we elaborate a spatio-temporal prompt tuning strategy to fit the specific attributes in a lightweight manner. Through the pretrain and prompt tuning phases, our PromptST is able to enhance the specific spatio-temoral characteristic capture by prompting the backbone model to fit the specific target attribute while maintaining the learned common knowledge. Extensive experiments on real-world datasets verify that our PromptST attains state-of-the-art performance. Furthermore, we also prove PromptST owns good transferability on unseen spatio-temporal attributes, which brings promising application potential in urban computing. The implementation code is available to ease reproducibility.},
+booktitle = {Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
+pages = {3195–3205},
+numpages = {11},
+keywords = {multi-attribute prediction, prompt learning, smart city, spatio-temporal prediction},
+location = {Birmingham, United Kingdom},
+series = {CIKM '23}
 }
